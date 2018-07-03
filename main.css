@@ -1,0 +1,225 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Istok Web', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 10vw 0 10vw;
+  border-style: 3px;
+  border-color: grey;
+  background-color: white;
+}
+
+.head{
+  padding: 5vh;
+  background-color: #79b330;
+}
+
+.motto{
+  font-size: 18pt;
+  align-items: center;
+  padding: 10vh 10vw 50px 10vh;
+  font-family: 'Poppins', fantasy;
+}
+
+.bigtext{
+    padding: 10px 10vw 5px 10vh;
+    font-family: 'Poppins', fantasy;
+    color: #383838;
+    font-size: 15pt;
+}
+
+.icons{
+  align-items: : center;
+  width: 20vh;
+}
+
+.illustration{
+  min-width: 100vw;
+  min-height: 50vh;
+  align-items: center;
+}
+
+
+.container{
+  margin: 0 0 0 0;
+  min-width: 100vw;
+  min-height: 50vh;
+  width: inherit;
+  height: inherit;
+  background-image: url(./img/layer6.png), url(./img/layer5.png), url(./img/layer4.png), url(./img/layer3.png), url(./img/layer2.png), url(./img/layer1.png);
+  background-position: 0 0, 0 0, 3% 0, 3% 0, 0 0, 0 0 ;
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  animation: animate-background linear 7s infinite;
+}
+
+@keyframes animate-background {
+  0% { background-position: 0 0, 0 0, 3% 0, 3% 0, 0 0, 0 0; } 
+  50% { background-position: 0 0, 5% 0, 0 0, 0 0, 7% 0, 0 0;}
+  100% { background-position: 0 0, 0 0, 3% 0, 3% 0, 0 0, 0 0; } 
+}
+
+.text{
+  font-family: 'Istok Web', sans-serif;
+  font-size: 14pt;
+  color: #383838;
+}
+
+.name{
+  font-size: 14pt;
+  font-family: 'Poppins', sans-serif;
+}
+
+.boldtext{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16pt;
+}
+/* Style the header with a grey background and some padding */
+.header {
+  font-family: 'Poppins', sans-serif;
+  overflow: auto;
+  background-color: #091b18;
+  padding: 15px 5vw;
+  position: auto;
+  position: -webkit-sticky;
+  width: 100%;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: #B5B5B5;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 6px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  color: #F9FBF2;
+}
+
+
+/* Float the link section to the right */
+.header-right {
+  float: left;
+}
+
+.header .icon{
+  display: none;
+}
+
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 600px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+
+  .header a.icon {
+    float: right;
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .header.responsive {position: relative;}
+  .header.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.wrap{
+  padding: 7vh 5vw 10px 10vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.wrap > div{
+  padding: 0 0 0 1vw;
+  text-align: left;
+}
+
+.wrap5{
+  padding: 0 5vw 2vh 10vw;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.wrap5 > div{
+  padding: 0 0 0 1vw;
+  text-align: center;
+  align-items: center;
+}
+
+.wrap5works{
+  padding: 0 5vw 0vh 10vw;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.wrap5works > div{
+  padding: 0 0 0 1vw;
+  text-align: center;
+  align-items: center;
+}
+
+.footer{
+  padding-top: 50px;
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #79b330;
+  color: white;
+}
+
+.spacing_main{
+  padding: 0 0 10vh 0;
+}
+
+.footer_wrap{
+    padding: 0 5vw 5vh 10vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.footer_wrap > div{
+  padding: 0 0 0 1vw;
+  text-align: left;
+}
+
+.header_wrap{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.header_wrap > div{
+  text-align: left;
+}
+
+.teamtext{
+  font-size: 18pt;
+  align-items: center;
+  padding: 3vh 10vw 2vh 10vh;
+  font-family: 'Poppins', fantasy;
+}
+
+.nuimg{
+  width: 35vw;
+  align-items: center;
+}
